@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- GoogleTag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW72S8504N"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-HW72S8504N");
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <script src="/theme.js"></script>
+        <link rel="stylesheet" href="/style.css" />
+        <meta property="og:site_name" content="Relicer" />
+        <title>About Us - Relicer</title>
+        <meta property="og:title" content="About Us - Relicer" />
+        <meta name="description" content="Relicerチームについて" />
+        <meta property="og:description" content="Relicerチームについて" />
+    </head>
+    <body>
+        <header></header>
+        <script>
+            (async () => {
+                const res = await fetch("/header.html");
+                document.querySelector("header").innerHTML = await res.text();
+            })();
+        </script>
+        <!-- ここより下に書いてください -->
+        <h1>About Us</h1>
+        <div class="doFlex">
+            <div class="flex1">
+                <h2>Musenmy</h2>
+                <br />
+                <p>2022年にこの集いを立ち上げた中部の人。</p>
+                <p>プロジェクトのほとんどのコードは自分で書いている。</p>
+                <p>名前の由来は無洗米であるが、なぜこの名前にしたのか覚えていない。</p>
+            </div>
+            <div class="flex2">
+                <h2>Quaver</h2>
+                <br />
+                <p>設立時からメンバーである。</p>
+                <p>NodeJSからプログラムに入って個人で小規模なBotを運営している。チームとしてはJSONなどデータ関連で携わっている。</p>
+                <p>名前の由来は8分音符 (サブ垢は16分音符) のイギリス英語である。</p>
+            </div>
+        </div>
+        <!-- ここより上に書いてください -->
+        <footer></footer>
+        <script>
+            (async () => {
+                const res = await fetch("/footer.html");
+                document.querySelector("footer").innerHTML = await res.text();
+            })();
+        </script>
+    </body>
+</html>

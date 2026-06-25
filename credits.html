@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- GoogleTag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW72S8504N"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-HW72S8504N");
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <script src="/theme.js"></script>
+        <link rel="stylesheet" href="/style.css" />
+        <meta property="og:site_name" content="Relicer" />
+        <title>クレジット - Relicer</title>
+        <meta property="og:title" content="クレジット - Relicer" />
+        <meta name="description" content="Relicerでの使用品紹介とクレジット" />
+        <meta property="og:description" content="Relicerでの使用品紹介とクレジット" />
+    </head>
+    <body>
+        <header></header>
+        <script>
+            (async () => {
+                const res = await fetch("/header.html");
+                document.querySelector("header").innerHTML = await res.text();
+            })();
+        </script>
+        <!-- ここより下に書いてください -->
+        <h1>使用品紹介・クレジット</h1>
+        <p class="center">二次創作に役立つ情報や権利者表記</p>
+        <br /><br />
+
+        <div class="doFlex">
+            <div class="flex1 center">
+                <h2>Relicer</h2>
+                <br />
+                <p>ソース協力<br />quaver0785</p>
+                <br />
+                <p>サーバープロバイダー<br />XServer</p>
+                <br />
+                <p>エンドポイント<br />Enka.network (from Algoinde)</p>
+                <br />
+                <p>フォント<br />ゲーム内フォント (from miHoYo)<br />DIN 2014 (from Deutsches Institut für Normung)<br />Magistral Book (from Adobe Fonts)</p>
+            </div>
+            <br />
+            <div class="flex2 center">
+                <h2>公式サイト</h2>
+                <br />
+                <p>ソース協力<br />Ryuya_0124</p>
+                <br />
+                <p>サーバープロバイダー<br />GitHub Pages</p>
+                <br />
+                <p>フォント<br />Myriad (from Robert Slimbach)<br />Noto Sans (from Google LLC)</p>
+            </div>
+        </div>
+        <!-- ここより上に書いてください -->
+        <footer></footer>
+        <script>
+            (async () => {
+                const res = await fetch("/footer.html");
+                document.querySelector("footer").innerHTML = await res.text();
+            })();
+        </script>
+    </body>
+</html>
