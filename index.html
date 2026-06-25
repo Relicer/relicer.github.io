@@ -22,6 +22,13 @@
         <meta property="og:title" content="TOP - Relicer" />
         <meta name="description" content="Relicerの紹介" />
         <meta property="og:description" content="Relicerの紹介" />
+
+        <script>
+            // index.html で開かれたら / にリダイレクトする
+            if (window.location.pathname === "/index.html") {
+                window.location.href = "/";
+            }
+        </script>
     </head>
     <body>
         <header></header>

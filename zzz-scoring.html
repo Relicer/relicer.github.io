@@ -39,8 +39,7 @@
         <div class="center" id="evals">
             <h2>スコア評価基準</h2>
             <p>メインステ補正を含んだ値を評価しています。厳選易化に伴いスタレよりもっと厳しくなりました。</p>
-            <br /><br />
-            <table border="1" align="center" cellpadding="30">
+            <table>
                 <tr>
                     <th>評価</th>
                     <th>単体スコア</th>
@@ -98,40 +97,36 @@
                 </tr>
             </table>
         </div>
-        <br /><br />
         <div class="center" id="funcs">
             <h2>スコア計算基準</h2>
-            <br /><br />
-            <table border="1" align="center" cellpadding="30">
+            <p>HPのみ基準や防御基準はありませんが、対応するキャラが実装されたら追加する予定です。</p>
+            <table>
                 <tr>
                     <th>計算基準</th>
                     <th>式</th>
                 </tr>
                 <tr>
-                    <td>攻撃<br />多くのキャラのデフォルト</td>
+                    <td>攻撃</td>
                     <td>ATK% + ATK/15 + CR×2 + CD + PEN/17</td>
                 </tr>
                 <tr>
-                    <td>HP<br />儀玄のデフォルト</td>
+                    <td>HP</td>
                     <td>HP% + HP/89 + CR×2 + CD + PEN/17</td>
                 </tr>
                 <tr>
-                    <td>攻撃のみ<br />蒼角のデフォルト</td>
+                    <td>攻撃のみ</td>
                     <td>ATK%×1.964 + ATK/7.6</td>
                 </tr>
                 <tr>
-                    <td>防御のみ<br />ベンのデフォルト</td>
+                    <td>防御のみ</td>
                     <td>DEF%×1.226 + DEF/5.9</td>
                 </tr>
                 <tr>
-                    <td>異常<br />ほとんどの異常キャラのデフォルト</td>
+                    <td>異常</td>
                     <td>AP/1.553 + ATK%/1.553 + ATK/23.3 + PEN/26.4</td>
                 </tr>
             </table>
         </div>
-
-        <br /><br />
-
         <!-- ここより上に書いてください -->
         <footer></footer>
         <script>
